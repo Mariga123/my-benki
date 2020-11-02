@@ -1,0 +1,26 @@
+.about,.vision,.mission{
+    text-align: center;
+}
+.pics{
+    display: inline-block;
+}
+#team{
+    text-align: center;
+}
+body{
+    background-image: url(../images/bank\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: large;
+     color: black;
+    
+}
+
+h2 span{
+    color: white;
+}
+
+h3 span{
+    color: white;
+}

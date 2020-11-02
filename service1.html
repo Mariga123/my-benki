@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBenki</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/service1.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse bg-white">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <div class="log">
+                  <a class="navbar-brand" href="index.html">myBenki</a>
+                <img src="./images/logo.png" alt="" height="40px">
+                         </div>
+                
+              </div>
+              </li>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+    
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >Services<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="service1.html">Track finances</a></li>
+                    <li><a href="booking.html">Book for training</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#form"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#form"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class="page-header">
+            <h1>Track your finances </h1>
+        </div>
+
+        <br>
+        <div class= "intro">
+<h2>Hi there,</h2>
+<p class="par"> Below is an interesting exercise that will help you track your income.</p>
+<p class="par">Have fun in feeding the data and getting to know your finance position at the end of month. </p>
+</div>
+        <form id="income">
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <h4>Sources of Income</h4>
+                
+                <div class="form-group">
+                    <label for="month">Choose month:</label>
+                    <select class="form-control" id="month" required>
+                        <option></option>
+                        <option value="">January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Enter your salary:</label>
+                    <input type="number" class="form-control" id="salary" placeholder="eg. 1000" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Enter your wages:</label>
+                    <input type="number" class="form-control" id="wages" placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Enter your Business income:</label>
+                    <input type="number" class="form-control" id="bizna" placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Enter your Bonus amount:</label>
+                    <input type="number" class="form-control" id="bonus" placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Others:</label>
+                    <input type="number" class="form-control" id="others1" placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <br>
+
+            </div>
+
+            <div class="col-md-6">
+
+
+                <h4>Expenditure </h4>
+                <div class="form-group">
+                    <label for="deposit">Enter your Rent</label>
+                    <input type="number" class="form-control" id="rent"
+                        placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="withdraw" placeholder='1000.00'>Enter amount spent on Food</label>
+                    <input type='number' id='food' class='form-control' placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="deposit">Enter your Medical Expenses </label>
+                    <input type="number" class="form-control" id="medical"
+                        placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="withdraw" placeholder='1000.00'>Enter amount spent on School Fees</label>
+                    <input type='number' id='fees' class='form-control' placeholder="Enter Amount (to the nearest $" required>
+                </div>
+                <div class="form-group">
+                    <label for="deposit">Enter amount spent on Entertainment</label>
+                    <input type="number" class="form-control" id="entertain"
+                        placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+                <div class="form-group">
+                    <label for="withdraw" placeholder='1000.00'>Others</label>
+                    <input type='number' id="others2" class='form-control'
+                        placeholder="Enter Amount (to the nearest $)" required>
+                </div>
+            </div>
+                <button type="submit" class="btn btn-success" id="bal">Total Balance</button>
+
+           
+
+
+        </div>
+        </form>
+    
+        <div class="account">
+            <h3><span class="name"></span> Your current account balance is $.<span id="diff"></span>
+            </h3>
+        </div>
+        <div class="contacts">
+            <h2> <span>Contacts</span> </h2>
+            <h3> <span>Follow myBenki for great budgeting ideas</span> </h2>
+              <div id="contacts">
+                <h3> <span>Feel free to contact us</span> </h3>
+                <br>
+                <ul>
+                  <li><a href="" target="_blank"><img src="./images/facebook__1_.png" alt=""></a></li>
+                  <li><a href="" target="_blank"><img src="./images/twitter (1).png" alt="">
+                    </a></li>
+                  <li><a href="" target="_blank"><img src="images/gmail.png" alt="">
+                    </a></li>
+                  <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+                  <li><a href="https://goo.gl/maps/Cc9oF6igdsTWxyoR6">
+                      <img src="./images/whatsapp__1_.png" alt=""></a></li>
+                </ul>
+              </div>
+              <p> <span>Alright reserved by myBenki @2020</span>  </p>
+          </div>
+
+    </div>
+    
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>

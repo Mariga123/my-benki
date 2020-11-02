@@ -1,0 +1,86 @@
+nav{
+    width: 100%;
+    height:60px;
+    padding: 0px;
+    background: #333;
+    color:rgb(51, 51, 51);
+    }
+    
+    nav>ul>li{
+    display:inline-block;
+      padding-left:20px ;           
+    text-align:right;
+    }
+    nav >ul>li>a {
+        color:grey ;
+    }
+body{
+   background-image: url(../images/bank\ 1.jpeg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+     color: black;
+
+}
+
+h1{
+    text-align: center;
+    
+    color:turquoise;
+}
+#test{
+    color: black;
+}
+h2{
+    text-align: center;
+    
+    color:turquoise;
+}
+h2 span{
+    color: white;
+}
+#ppp{
+    color:black;
+}
+
+h3 span{
+    color: white;
+}
+
+.blog{
+    display: inline;
+    text-align: center;
+
+    
+    
+}
+
+p{
+    
+    text-align: center;
+}
+
+h5{
+    color:turquoise;
+
+}
+
+p span{
+    color:grey;
+}
+
+.contacts {
+    background-color: black; 
+  }
+  #contacts img{
+    width: 50px;
+      height: 50px;
+      display:inline-flex;
+      text-align: center;
+  }
+  #contacts>ul>li{
+    display:inline-block;
+    padding:30px 30px 30px;
+    margin-top:-65px;
+    margin-left: 100px;
+  }

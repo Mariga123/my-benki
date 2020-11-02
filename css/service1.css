@@ -1,0 +1,70 @@
+.page-header{
+    padding-top: 25px;
+    color: black;
+
+}
+
+  body {
+background-image:url(../images/bank\ 1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    
+  }
+  .intro .par{
+    color: black;
+    font-size: 20px;
+    
+  }
+  
+  .account {
+    text-align: center;
+    /* display: none; */
+    background-color:turquoise;
+    color: black;
+    box-shadow: 5px 5px 2.5px #535233;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+
+  
+  }
+
+  #income{
+    text-align: center;
+    background-color: #DEDBBA;
+    box-shadow: 5px 5px 2.5px #535233;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #8C873E;
+    margin-left: 200px;
+    width: 70%;
+    padding: 15px;
+    text-align: center;
+    opacity: 0.9;
+  } 
+   
+  #bal{
+    text-align: center;
+    margin-left:300px;
+    margin-right: 300px;
+    
+  }
+
+  h2 span{
+    color: white;
+}
+
+h3 span{
+    color: white;
+}
+
+  
+  
+  /* h1 {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+  }
+   */
